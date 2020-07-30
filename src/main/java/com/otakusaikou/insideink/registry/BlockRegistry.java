@@ -29,7 +29,7 @@ public class BlockRegistry {
 
 
     private static RegistryObject<SpiritStoneOre> registerSpiritStoneOre(String typeName, SpiritType type) {
-        RegistryObject<SpiritStoneOre> registryObject = registerWithItem(typeName + "_spirit_stone_ore", () -> new SpiritStoneOre(DEFAULT_PROPERTIES.notSolid(), type));
+        RegistryObject<SpiritStoneOre> registryObject = BLOCKS.register(typeName + "_spirit_stone_ore", () -> new SpiritStoneOre(DEFAULT_PROPERTIES.notSolid(), type));
         spiritStoneOreList.add(registryObject);
         return registryObject;
     }

@@ -2,6 +2,8 @@ package com.otakusaikou.insideink.registry;
 
 import com.otakusaikou.insideink.block.SpiritStoneOre;
 import com.otakusaikou.insideink.block.tinit.SpiritStoneOreColor;
+import com.otakusaikou.insideink.item.SpiritStoneOreItem;
+import com.otakusaikou.insideink.item.tinit.SpiritStoneOreItemColor;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -15,6 +17,14 @@ public class ColorRegistry {
         SpiritStoneOreColor spiritStoneOreColor = new SpiritStoneOreColor();
         for (RegistryObject<SpiritStoneOre> spiritStoneOre : BlockRegistry.spiritStoneOreList) {
             event.getBlockColors().register(spiritStoneOreColor, spiritStoneOre.get());
+        }
+    }
+
+    @SubscribeEvent
+    public static void blockColors(ColorHandlerEvent.Item event) {
+        SpiritStoneOreItemColor spiritStoneOreItemColor = new SpiritStoneOreItemColor();
+        for (RegistryObject<SpiritStoneOreItem> spiritStoneOreItem : ItemRegistry.spiritStoneOreItem) {
+            event.getItemColors().register(spiritStoneOreItemColor, spiritStoneOreItem.get());
         }
     }
 }
