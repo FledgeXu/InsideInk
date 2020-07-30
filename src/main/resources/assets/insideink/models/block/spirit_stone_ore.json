@@ -2,5 +2,8 @@
   "parent": "block/cube_all",
   "loader": "forge:obj",
   "model": "insideink:models/block/obj/spirit_stone_ore.obj",
-  "flip-v": true
+  "flip-v": true,
+  "textures": {
+    "particle": "insideink:block/spirit_stone_ore"
+  }
 }
