@@ -1,5 +1,30 @@
 {
   "variants": {
-    "": { "model": "insideink:block/metal_spirit_stone_ore" }
+    "facing=down": {
+      "model": "insideink:block/metal_spirit_stone_ore"
+    },
+    "facing=up": {
+      "model": "insideink:block/metal_spirit_stone_ore",
+      "x": 180
+    },
+    "facing=west": {
+      "model": "insideink:block/metal_spirit_stone_ore",
+      "x": 90,
+      "y": 90
+    },
+    "facing=east": {
+      "model": "insideink:block/metal_spirit_stone_ore",
+      "x": 90,
+      "y": -90
+    },
+    "facing=south": {
+      "model": "insideink:block/metal_spirit_stone_ore",
+      "x": 90
+    },
+    "facing=north": {
+      "model": "insideink:block/metal_spirit_stone_ore",
+      "x": 90,
+      "y": 180
+    }
   }
 }
